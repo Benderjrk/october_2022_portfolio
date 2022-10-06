@@ -24,17 +24,17 @@ export default function Header({}: Props) {
             className='flex flex-row items-center'>
             {/* Social Icons */}
             <SocialIcon 
-                url="https://www.youtube.com/channel/UCMCdR29yI956BEDUHpBoggA"
+                url="https://github.com/Benderjrk"
                 fgColor="gray"
                 bgColor='transparent' 
             />
             <SocialIcon 
-                url="https://www.youtube.com/channel/UCMCdR29yI956BEDUHpBoggA"
+                url="https://www.linkedin.com/in/benderjustin/"
                 fgColor="gray"
                 bgColor='transparent' 
             />
             <SocialIcon 
-                url="https://www.youtube.com/channel/UCMCdR29yI956BEDUHpBoggA"
+                url="https://twitter.com/Justbender"
                 fgColor="gray"
                 bgColor='transparent' 
             />
@@ -63,8 +63,8 @@ export default function Header({}: Props) {
             <SocialIcon 
                 className='cursor-pointer'
                 network='email'
-                fgColor="gray"
-                bgColor='transparent' 
+                fgColor='gray'
+                bgColor='transparent'
             />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
         </motion.div>
