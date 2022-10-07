@@ -26,22 +26,26 @@ export default function Header({}: Props) {
             <SocialIcon 
                 url="https://github.com/Benderjrk"
                 fgColor="gray"
-                bgColor='transparent' 
+                bgColor='transparent'
+                className='heroButton' 
             />
             <SocialIcon 
                 url="https://www.linkedin.com/in/benderjustin/"
                 fgColor="gray"
                 bgColor='transparent' 
+                className='heroButton' 
             />
             <SocialIcon 
                 url="https://twitter.com/Justbender"
                 fgColor="gray"
                 bgColor='transparent' 
+                className='heroButton' 
             />
             <SocialIcon 
                 url="https://www.youtube.com/channel/UCMCdR29yI956BEDUHpBoggA"
                 fgColor="gray"
                 bgColor='transparent' 
+                className='heroButton' 
             />
         </motion.div>
 
@@ -61,7 +65,7 @@ export default function Header({}: Props) {
             }}
             className='flex flex-row items-center text-gray-300 cursor-pointer'>
             <SocialIcon 
-                className='cursor-pointer'
+                className='cursor-pointer heroButton'
                 network='email'
                 fgColor='gray'
                 bgColor='transparent'
