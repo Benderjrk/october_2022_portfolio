@@ -8,9 +8,21 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import styles from '../styles/Home.module.css'
 
+import { motion } from "framer-motion";
+
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
+    <motion.div 
+      initial={{
+        backgroundColor: '#000000'
+      }}
+      animate={{
+        backgroundColor: 'rgb(36,36,36)'
+      }}
+      transition={{
+        duration: 2.5,
+      }}
+      className=" text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
       <Head>
         <title>Justin&apos;s Portfolio</title>
       </Head>
@@ -21,23 +33,23 @@ const Home: NextPage = () => {
       <section id='about' className='snap-center'>
         <About />
       </section>
-      {/* <section id='experience' className='snap-center'>
+      <section id='experience' className='snap-center'>
         <WorkExperience />
-      </section> */}
+      </section>
       
       {/* Skills */}
-      {/* <section id='skills' className='snap-center'>
+      <section id='skills' className='snap-center'>
         <Skills />
-      </section> */}
+      </section>
 
       {/* Projects */}
-      {/* <section id='projects' className='snap-center'>
+      <section id='projects' className='snap-center'>
         <Projects />
-      </section> */}
+      </section>
       
       {/* Contact Me */}
 
-    </div>
+    </motion.div>
   )
 }
 
