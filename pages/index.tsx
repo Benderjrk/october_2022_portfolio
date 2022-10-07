@@ -14,10 +14,10 @@ const Home: NextPage = () => {
   return (
     <motion.div 
       initial={{
-        backgroundColor: '#000000'
+        backgroundColor: '#1D1F1F'
       }}
       animate={{
-        backgroundColor: 'rgb(36,36,36)'
+        backgroundColor: ['#133702', '#1D1F1F']
       }}
       transition={{
         duration: 2.5,
